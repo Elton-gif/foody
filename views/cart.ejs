@@ -1,0 +1,65 @@
+<%-include('header')-%>
+
+<section class="" id="cart">
+    <nav id="top-title"> 
+        <a href="/" id="back"><i class="fal fa-angle-left"></i></a>
+        <h3>Shopping Cart</h3>
+    </nav>
+    <h4>Order Summary</h4>
+    <h1 class="d-none" id="index"><%=index%></h1>
+  
+    <div id="row-cards">
+    <form action="/cart-delete" method="post" id="row-card" >
+        
+        <input type="text" name="cartID" value="val" class="d-none">
+        <img src="/media/ian-dooley-TLD6iCOlyb0-unsplash.jpg" alt="" id="rowcardimage">
+       <div id="otherInfo">
+           <div id="info-a" >
+            <h5 id="cart-item">Cappuccino</h5>
+            <a href="/pick" id="edit"><i class="fal fa-pencil"></i></a>
+           </div>
+           <div id="priceDel">
+            <h5 id="priceit">$ 3.45</h5>
+         <button id="del" type="submit" ><i class="fal fa-trash-alt"></i></button>
+             
+        </div>
+        
+       </div>
+      
+    </form>
+   
+    </div>
+    <hr>
+
+    <div id="itemprice">
+        <form action="/cart" method="post">
+            <input type="text" name="cartID" value="" class="d-none">
+         <div id="ledger">
+          <div id="sheet" >  
+            <div>
+            <h5 id="subtotal">Subtotal</h5>  
+            <h5 id="amount">$5.00</h5>
+              
+            </div>  
+            <div>
+            <h5 id="subtotal">Deliveryfee</h5>  
+            <h5 id="amount">$1.00</h5>
+            </div>
+            <div>
+                <h5 id="subtotal">Total</h5>  
+                <h5 id="amount">$1.00</h5>
+                </div>
+            </div>  
+         </div>
+
+            <input type="text" name="subtotal" class="d-none" >
+            <input type="text" name="Total" class="d-none" >
+            <aside>
+            <button class="bg-success"  id="checkout" > Checkout </button>
+
+            </aside>
+        </form>
+    </div>
+</section>
+
+<%-include('footer')-%>

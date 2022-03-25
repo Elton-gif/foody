@@ -1,0 +1,682 @@
+body
+{
+    
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: rgb(255, 214, 127);
+    padding: 0;
+    margin: 0;
+ 
+}
+input
+{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:transparent;
+    border-radius:500px ;
+    text-align: center;
+    padding: 5px;
+    /* box-shadow: 0 0 3px rgba(14, 13, 13, 0.767),0 0 3px rgba(14, 13, 13, 0.767); */
+}
+#foodcategory
+{
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+
+}
+#foodcategory::-webkit-scrollbar {
+    display: none;
+}
+
+#catcardcategory
+{
+    
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 5px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid rgb(196, 184, 184);
+    text-align: center;
+}
+a:hover
+{
+    color: inherit;
+}
+#offers
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    padding: 5px;
+}
+#catcardoffers
+{
+    background-color: transparent;
+    box-shadow:0 0 5px #00000066,0 0 5px #00000066,0 0 1px #f8f1f166 ;
+    background-color: #837a7a2d;
+    padding: 5px;
+    border: white 2px solid;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;   
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+#allcardoffers
+{
+    display: flex;
+    justify-content:space-around
+}
+#offerimg
+{
+    width: 3cm;
+    height: 2cm;
+    object-fit: cover;
+}
+
+#ofertag
+{
+    padding: 5px;
+}
+#rate
+{
+   
+    background-color: crimson;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    right: 5px;
+    padding:5px; 
+    color: white;
+    top: 0;
+    border-radius: 3px;
+}
+#rate i
+{
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+#catcardoffers #rate
+{
+    right: -15%;
+    top: -3%;
+}
+p
+{
+    padding: 0;
+    margin: 0;
+}
+#lastp
+{
+    text-decoration: line-through;
+    color: grey;
+}
+#popular
+{
+    
+margin-bottom: 50px;
+    
+}
+#popcard
+{
+    position: relative;
+    background-color: #837a7a2d;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:0 0 5px #00000066,0 0 5px #00000066,0 0 1px #f8f1f166 ;
+    margin-top: 25px;
+}
+#eachCard
+{
+    display: flex;
+    
+}
+#eachCard p
+{
+    padding: 6px;
+}
+#popularimg
+{
+    height: 3.5cm;
+    width: 3.5cm;
+    margin-right:5px ;
+    object-fit: cover;
+}
+footer
+{
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    padding: 5px;
+    margin-left: -3%;
+}
+footer ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 5px;
+    z-index: 500000;
+    border-radius: 500px;
+
+}
+footer ul li i
+{
+    /* margin-left: 50%; */
+    font-size: 1.5em;
+    color: indianred;
+    
+}
+
+.active i
+{
+    /* background-color:rgb(255, 214, 127); */
+   
+    padding: 5px;
+    border-radius: 50%;
+    color:white;
+    animation: switch 1.2s  linear;
+    transition: 1s;
+    /* transform: translateY(-30px); */
+    z-index: 6000000;
+   
+}
+
+/*Pick styles*/
+#top-title
+{
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin-left: 10%; */
+    /* justify-content:center; */
+
+}
+#top-title a 
+{
+    margin-right: 36%;
+}
+#theImage
+{
+    width: 8cm;
+    height: 7cm;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: azure;
+}
+#image-conatiner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#d
+{
+    display: flex;
+
+}
+#d p
+{
+    margin-left: 10px;
+}
+#detailsTarget
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ribbon
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5% 0 10% 0;
+}
+#ribbon p
+{
+    margin-left: 5%;
+}
+#calories
+{
+    border-left:solid gray 2px ;
+    padding: 0 25px  0 25px;
+    border-right:solid gray 2px;
+}
+#detover
+{
+    margin-bottom: 10%;
+}
+
+
+#ingredients
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5% 0 10% 0;
+    text-align: center;
+
+}
+#amount
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+#increase
+{
+    outline: none;
+    background-color: transparent;
+    /* border:transparent; */
+    border-color: transparent;
+    background-color: indianred;
+    border-radius: 50%;
+    height: 1cm;
+    width: 1cm;
+    padding: 4px;
+    margin: 10px;
+}
+
+#sub
+{
+    
+}
+#quantity
+{
+    position: absolute;
+    /* left: 50%; */
+    /* 46 - 51 */
+}
+button
+{
+    background-color: indianred;
+    border-color: transparent;
+    color: #f5f5f5;
+    border-radius: 60px;
+
+
+}
+#btnss
+{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+    margin: 5px;
+}
+#btnss button
+{
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+#sub
+{
+    display: flex;
+    justify-items: center;
+    
+}
+#sub input
+{
+    margin-left: 10px;
+    background-color: indianred;
+    color: whitesmoke;
+}
+#pricess
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:5%;
+
+}
+#initialprice
+{
+    text-decoration: line-through;
+    color: gray;
+}
+/* Cart check */
+#back i{
+    font-size: 1.7em;
+}
+#sheet
+{
+   
+    
+  
+}
+#sheet
+{
+    display: flex;
+    
+    justify-content: space-evenly;
+    width: 100%;
+}
+#del 
+{
+    background-color: transparent;
+    color: gray;
+    font-size: 1.4em;
+  
+}
+#row-card
+{
+    background-color: rgb(191, 207, 216);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+#otherInfo{
+    position: relative;
+}
+form
+{
+    position: relative;
+}
+#edit i 
+{
+    font-size: 1.5em;
+}
+#rowcardimage
+{
+height: 4cm;
+width: 4cm;
+background-size: cover;
+background-color: darkkhaki;
+border-radius: 5px;
+}
+#otherInfo
+{
+   width: 100%;
+}
+#info-a
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#priceDel
+{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    justify-content: space-between;
+    width: 100%;
+}
+aside
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#checkout
+{
+    width: 50%;
+    padding: 6px;
+    font-size: 1.22em;
+}
+/* Account creations */
+#signup
+{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+#circles
+{
+position: relative;
+height: 3cm;
+margin-bottom:10% ;
+}
+
+#circle-one
+{
+    height: 7cm;
+    width: 10cm;
+    border-radius: 50%;
+    transform: rotate(5deg);
+    border:3px solid  rgb(117, 20, 93);
+    background-color: transparent;
+    position: absolute;
+    top: -150%;
+    left: 20%;
+
+}
+#circle-two
+{
+    height: 7cm;
+    width: 15cm;
+    border-radius: 50%;
+    transform: rotate(-5deg);
+    border:3px solid  rgb(117, 20, 93);
+    background-color: transparent;
+    position: absolute;
+    top: -190%;
+    left: -10%;
+
+}
+#newacc
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    height: 100%;
+    width: 100%;
+    
+  
+
+}
+/* #newacc::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(500px);
+    background-color:rgba(128, 0, 128, 0.425);
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+#newacc input
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    padding: 5px;
+
+}
+#login
+{
+    border-radius:100px ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+} 
+#login:hover
+{
+    color: inherit;
+}
+a#back 
+{
+    font-size: 1.6em;
+    z-index: 500000;
+}
+section{
+    width: 100%;
+}
+/* Profile */
+article#me
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+}
+#profileimg
+{
+    height: 5cm;
+    width: 5cm;
+    object-fit: cover;
+    border-radius: 50%;
+    /* background-color: #f5f5f5; */
+   
+}
+#pImage
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* background-color: #f5f5f5; */
+}
+#dplab
+{
+    position:absolute;
+    bottom: 0;
+    right: 40%;
+    cursor: pointer;
+    
+
+}
+#dplab i
+{
+    background-color: rgb(10, 17, 17);
+    font-size: 1.7em;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    color: burlywood;
+
+}
+#history
+{
+    box-shadow:   0 0 10px rgb(99, 93, 21);
+    padding: 10px;
+    margin-top: 10%;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+#historycard
+{
+width: 100%;
+display: flex;
+justify-content:space-between;
+}
+#hisimg
+{
+    height: 2cm;
+    width: 2cm;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#updateImage
+{
+    background-color: aqua;
+    /* position: absolute; */
+   margin-left: 35%;
+    color: black;
+    top: 10%;
+    margin-top: 10px;
+}
+#name
+{
+    /* position: absolute; */
+    background-color: transparent;
+    border-radius:0 ;
+    border-bottom: 2px solid black;
+}
+#updateproc
+{
+    position: absolute;
+    margin: 15px;
+    align-items: center;
+    left: 30%;
+}
+
+/* favourite*/
+#favcontain
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+    /* background-color: white; */    
+}
+#favmg
+{
+    height: 7cm;
+    width: 8cm;
+    background-color: bisque;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0 10px 0 rgb(255, 214, 127);
+
+}
+#favourite
+{
+    margin-bottom: 50px;
+}
+
+#foodnamey
+{
+    border-radius:20px ;
+    background-color: bisque;
+    padding: 5px;
+    margin-bottom: -5px;
+
+}
+#caps
+{
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -12px;
+    z-index: -50000;
+    border-radius: 10px;
+
+}
+#delfav
+{
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: red;
+    margin-bottom: 10px;
+}

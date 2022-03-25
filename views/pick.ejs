@@ -1,0 +1,70 @@
+<%-include('header')-%>
+    <section class="d-lg-none" id="pick-body">
+        <nav id="top-title"> 
+            <a href="/" id="back"><i class="fal fa-angle-left"></i></a>
+            <h3>Beef Burger</h3>
+        </nav>
+<div id="image-conatiner">
+    <img src="/media/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" id="theImage" class="conatiner-fluid">
+</div>
+
+<div id="detover">
+    
+    <div id="detailsTarget">
+        <form action="" method="post">
+            <input type="text" name="foodId" class="d-none" >
+        <div id="ribbon">
+        <p> <i class="fas fa-clock"></i> 30min</p>
+        
+        <p id="calories"><i class="fas fa-fire"></i> 165Kcal</p>
+        
+        <p> <i class="fas fa-star"></i> 4.5</p>
+        </div>
+
+        <div id="ingredients">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam repellat qui repellendus impedit rerum dolorem atque ipsa porro tempora et quo suscipit alias dignissimos eaque, nulla doloremque voluptates harum optio?
+        </div>
+
+        <h4 id="location">Spisy Bites, collins avenue</h4>
+
+        <div id="amount">
+            <button id="increase" class="decrease">-</button>
+            <p id="quantity">5</p>
+            <button id="increase" class="increase">+</button>
+        </div>
+
+        <div id="sub">
+            <input type="button"  class="bg-light text-dark" value="Small" name="small">
+            <input type="button"   value="Medium" name="Medium">
+            <input type="button"  class="bg-light text-dark" value="Large" name="Large">
+        </div>
+        <div id="pricess">
+            <h5 id="initialprice">512 $</h5>
+            <h4 id="price">512 $</h4>
+            <input type="text" name="foodprice" value="" class="d-none">
+
+        </div>
+    <div id="btnss">
+        <button type="submit" >Add to cart</button>
+    </form>
+    
+         <form action="/bookmark" method="post">
+             <input type="text" name="foodid" class="d-none" >
+             <button id="bkm" class="bg-light text-dark"> Bookmark </button>
+
+         </form>   
+         <form action="/favourite" method="post">
+            <input type="text" name="foodid" class="d-none"  >
+            <button id="fvr" class="bg-light text-dark"> Fvourite </button>
+
+        </form>   
+    </div>
+    
+
+    </div>
+    
+</div>
+
+    </section>
+    <script src="/js/pickui.js"></script>
+<%-include('footer')-%>

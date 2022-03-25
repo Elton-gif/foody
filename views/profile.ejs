@@ -1,0 +1,48 @@
+<%-include('header')-%>
+<section id="profile">
+    <a href="/" id="back"><i class="fal fa-angle-left"></i></a>
+    <h2>Hi Name</h2>
+    <h1 class="d-none" id="index"><%=index%></h1>
+
+    <article id="me">
+        <div id="metoo">
+           <div id="profileimg">
+            <img src="" alt="" id="pImage" class="container-fluid">
+
+           </div>
+           <label id="dplab" for="dp"><i class="fas fa-camera"></i></label>
+            <input type="file" name="profile" id="dp" class="d-none">
+            <form action="/changes" method="post" id="updateproc">
+                <input type="text" id="imgurl" name="file" class="d-none" >
+                <input type="text" name="name" id="name" placeholder="update profile name">
+                <button id="updateImage">Update</button>
+            </form>
+        
+        </div>
+    </article>
+    <div id="history">
+        <h2 class="text-center m-4">History</h2>
+        <div id="historycard">
+            <img src="" alt="" id="hisimg">
+            <div id="nameprice">
+                <h3>Lorem</h3>
+                <h5>$45</h5>
+            </div>
+            <div id="date"><p id="date">Date</p></div>
+        </div>
+        <hr>
+        <div id="historycard">
+            <img src="" alt="" id="hisimg">
+            <div id="nameprice">
+                <h3>Lorem</h3>
+                <h5>$45</h5>
+            </div>
+            <div id="date"><p id="date">Date</p></div>
+        </div>
+
+        <hr>
+    </div>
+    <script src="/js/profile.js"></script>
+</section>
+
+<%-include('footer')-%>

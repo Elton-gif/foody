@@ -1,0 +1,45 @@
+<%-include('header')-%>
+
+
+<section id="favourite" class="d-lg-none container">
+<div id="topnav">
+    <a href="/"></a>
+    <h3 class="text-center">Your favourites </h3>
+</div>
+ 
+<h1 class="d-none" id="index"><%=index%></h1>
+
+
+    <div id="favcontain">
+        <h3 id="foodname">Favourite food</h3>
+        <img src="/media/didi-miam-AH2uOl8Z484-unsplash.jpg" alt="" id="favmg">
+        <div id="caps">
+            <h5 id="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+
+            <h4 id="dateadded">Date added: 12/4/2021</h4>
+            <form action="/delete" method="post">
+                <button id="delfav">Delete</button>
+            </form>
+        </div>
+       
+    </div>
+
+    <div id="favcontain">
+        <h3 id="foodnamey">Favourite food</h3>
+        <img src="/media/didi-miam-AH2uOl8Z484-unsplash.jpg" alt="" id="favmg">
+        <div id="caps">
+            <h5 id="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+
+            <h4 id="dateadded">Date added: 12/4/2021</h4>
+            <form action="/delete" method="post">
+                <button id="delfav">Delete</button>
+            </form>
+        </div>
+       
+    </div>
+
+</section>
+
+
+
+<%-include('footer')-%>
