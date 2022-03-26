@@ -1,7 +1,20 @@
 const btninc = document.querySelector('.increase');
 const btndecrease = document.querySelector('.decrease');
 const quantity = document.querySelector('#quantity');
+// const btns = [...document.querySelectorAll('button')];
+const cartbtn = document.getElementById('buttoncart');
 
+
+cartbtn.addEventListener('click',()=>{
+    cartbtn.innerHTML ='Added to cart'
+})
+// btns.forEach((e)=>{
+//     alert
+//     e.onclick((b)=>{
+//         alert('Clicked')
+//         b.preventDefault();
+//     })
+// })
 
 
 
