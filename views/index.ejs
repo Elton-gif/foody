@@ -1,12 +1,17 @@
 <%-include('header')-%>
 
 <section id="smalls" class="d-lg-none ">
-<header>
+<header id="smheader">
     <div id="short"></div>
-    <h2>Hi Jasmine</h2>
+    <div id="headerthis">
+
+        <h2>Hi Jasmine</h2>
     <h4>Enjoy Your Meal</h4>
-    <input type="search" name="search" id="search">
-</header>
+    <input type="search" name="search" placeholder="search your tastes" id="search">
+
+    </div>
+    <h2 id="carts"><a href="/cart"><i class="fal fa-cart-arrow-down"></i></a> </h2>
+    </header>
 <h1 class="d-none" id="index"><%=index%></h1>
 
 
@@ -124,7 +129,6 @@
 </a>
 <a href="/pick">
     <div id="popcard">
-
         <div id="eachCard">
             <p id="rate"> <i class="fal fa-star"></i> 4.5</p>
         <img src="/media/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" id="popularimg">
@@ -147,7 +151,7 @@
 </section>
 
 
-<section id="largehome" class="d-sm-none d-lg-block container" >
+<section id="largehome" class="d-none d-md-block container" >
     <header>
         <div id="short"></div>
         <h2>Hi Jasmine <div id="profile"></div> </h2>
@@ -266,25 +270,7 @@
                        
                     </div>
                 </a>
-                <a href="/pick">
-                    <div id="popcard">
-                
-                        <div id="eachCard">
-                            <p id="rate"> <i class="fal fa-star"></i> 4.5</p>
-                        <img src="/media/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" id="popularimg">
-                       <div id="rating">
-                        <h4 id="tittle">Spicy Tacco</h4>
-                        <p id="Ingredients">Chicken,pepper,tomatot,onion</p>
-                        <h6 id="price">$12</h6>
-                        </div>
-                
-                        
-                        
-                      
-                       </div>
-                       
-                    </div>
-                </a>
+               
                 
             </div>
         
@@ -294,7 +280,7 @@
             <div id="largeribbon">
                <div id="cartcounter">
                <h2 id="carttt" class="active">Cart 
-                <sup>4</sup>
+                <sup>2</sup>
 
                </h2>
                </div> 
@@ -304,7 +290,7 @@
                 <div id="largecart">  
                 <form action="/cart-delete" method="post" id="row-card" >
         
-                    <input type="text" name="cartID" value="val" class="d-none">
+                    <input type="text" name="cartID" placeholder="" value="val" class="d-none">
                     <img src="/media/ian-dooley-TLD6iCOlyb0-unsplash.jpg" alt="" id="rowcardimage">
                    <div id="otherInfo">
                        <div id="info-a" >

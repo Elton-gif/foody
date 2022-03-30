@@ -9,6 +9,24 @@ body
     margin: 0;
  
 }
+#smheader
+{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#headerthis
+{
+    width: 70%;
+}
+#carts
+{
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: tomato;
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+}
 input
 {
     width: 100%;
